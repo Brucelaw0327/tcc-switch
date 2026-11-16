@@ -1,0 +1,26 @@
+# SwiftPM 构建产物（.build 含 dSYM，DWARF 中带构建机绝对路径）
+.build/
+.swiftpm/
+xcuserdata/
+*.xcodeproj/
+*.xcworkspace/
+
+# 打包产物：ad-hoc 签名、未公证，不建议随源码提交
+dist/
+*.dmg
+*.app/
+
+# macOS 元数据
+.DS_Store
+
+# 隐私：TCC.db 及其备份、WAL/SHM 一律禁止提交
+*.db
+*.db-wal
+*.db-shm
+TCC-backup-*/
+
+# 本地笔记 / 编辑器
+.workbuddy/
+.idea/
+.vscode/
+*.swp
